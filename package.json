@@ -179,7 +179,10 @@
   "codegenConfig": {
     "name": "RNLiquidGlassViewSpec",
     "type": "components",
-    "jsSrcsDir": "./src"
+    "jsSrcsDir": "src",
+    "ios": {
+      "modulesConformingToProtocol": []
+    }
   },
   "create-react-native-library": {
     "type": "view-mixed",
