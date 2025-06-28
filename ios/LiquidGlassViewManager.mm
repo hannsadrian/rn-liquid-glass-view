@@ -4,6 +4,14 @@
 #import "LiquidGlassView.h"
 #import "Utils.h"
 
+#ifdef RCT_NEW_ARCH_ENABLED
+#import <react/renderer/components/RNLiquidGlassViewSpec/ComponentDescriptors.h>
+#import <react/renderer/components/RNLiquidGlassViewSpec/EventEmitters.h>
+#import <react/renderer/components/RNLiquidGlassViewSpec/Props.h>
+#import <react/renderer/components/RNLiquidGlassViewSpec/RCTComponentViewHelpers.h>
+#import "RCTFabricComponentsPlugins.h"
+#endif
+
 @interface LiquidGlassViewManager : RCTViewManager
 @end
 
@@ -38,7 +46,11 @@ RCT_EXPORT_MODULE(LiquidGlassView)
 
 RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock);
 
-
-
+#ifdef RCT_NEW_ARCH_ENABLED
+- (std::shared_ptr<facebook::react::ViewManager>)viewManager
+{
+  return std::make_shared<facebook::react::LiquidGlassViewManager>();
+}
+#endif
 
 @end

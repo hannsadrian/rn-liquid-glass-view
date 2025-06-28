@@ -18,7 +18,7 @@
     "lib",
     "ios",
     "cpp",
-    "*.podspec",
+    "rn-liquid-glass-view.podspec",
     "!ios/build",
     "!android/build",
     "!android/gradle",
@@ -63,10 +63,10 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
-    "@react-native/eslint-config": "^0.73.1",
+    "@react-native/eslint-config": "^0.74.84",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.44",
+    "@types/react": "^18.3.3",
     "commitlint": "^17.0.2",
     "del-cli": "^5.1.0",
     "eslint": "^8.51.0",
@@ -74,15 +74,15 @@
     "eslint-plugin-prettier": "^5.0.1",
     "jest": "^29.7.0",
     "prettier": "^3.0.3",
-    "react": "19.1.0",
-    "react-native": "0.80.0",
+    "react": "18.3.1",
+    "react-native": "0.76.9",
     "react-native-builder-bob": "^0.26.0",
     "release-it": "^15.0.0",
     "turbo": "^1.10.7",
     "typescript": "^5.2.2"
   },
   "resolutions": {
-    "@types/react": "^18.2.44"
+    "@types/react": "^18.3.3"
   },
   "peerDependencies": {
     "react": "*",
@@ -179,7 +179,7 @@
   "codegenConfig": {
     "name": "RNLiquidGlassViewSpec",
     "type": "components",
-    "jsSrcsDir": "src"
+    "jsSrcsDir": "./src"
   },
   "create-react-native-library": {
     "type": "view-mixed",
